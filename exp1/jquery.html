@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fan page</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="mystyle.css">
+     <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+
+            $("#search").focus(function(){
+                $(this).css("background-color","lightgrey")
+
+            });
+        });
+      
+        $(document).ready(function(){
+            $(".menu").hover(function(){
+                $(this).text( "~~~ MR.MOON IS THE BEST! ~~~");
+                $(this).css("background-color","#1E91D6 ");
+                $(this).css("font-size","40px");
+                $(this).css("color","white")
+
+            },function(){
+                $(this).text("WELCOME TO MR.MOON FANPAGE!");
+                $(this).css("background-color"," #5ADBFF");
+            });
+        });
+
+      
+        $(document).ready(function(){
+            $("#search").blur(function(){
+                $(this).css("background-color","white");
+               
+
+            });
+        });
+        $(document).ready(function(){
+            $("#c").dblclick(function(){
+                $("#a").toggle(1000);
+            });
+        });
+
+        $(document).ready(function(){
+            $("#d").click(function(){
+                $("#b").toggle(1000);
+            });
+        });
+
+       
+    </script>
+   <div class="main">
+   <div class="head">
+       <img src="moon2.png"> 
+       <h1 class="h11"> MR.MOON</h1><p class="p1"> Kim Soo-Hyun</p>
+       <form>
+           
+           <i class="fas fa-search"></i><input type="text" id="search" value="search web">
+       </form>
+   </div>
+   <div class="menu"><p class="p1">WELCOME TO MR.MOON FANPAGE!</p></div>
+   <div class="content">
+
+    <div class="mr" id="a"><img src="kk.jpg"></div>
+    <div class="mr" id="b"><img src="ab.jpg"></div> 
+    <div class="mr a"> 
+        <button id="d">click for surprise</button>
+        <button id="c">double click for surprise</button>
+       
+    </div> 
+</div>
+   <div class="footer"> THANK YOU FOR VISITING!<br>
+
+    <center><i class="fab fa-facebook"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i><br><br></center>
+
+</div>
+</div>
+   
+    
+</body>
+</html>

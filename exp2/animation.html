@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="cliff-5436923_1920.jpg">
+    <div id="b">Click Me</div>
+    <div id="a">Live<span style="font-size: 15px;">(mouse over me)</span></div>
+    <script>
+        $(document).ready(function(){
+            $("#a").mouseenter(function loop(){
+                // $(this).text("Long");
+                // $(this).fadeOut();
+                $(this).fadeOut(1500);
+                $(this).fadeIn(2000,loop);
+                $(this).css("background-color","white",2000);
+                $(this).css("color","skyblue",2000);
+           
+
+            });
+
+            $("#a").mouseleave(function(){
+                $(this).fadeIn(1000);
+                $(this).css("background-color","transparent");
+                $(this).css("color","white");
+
+            });
+
+            $("#b").click(function(){
+                $(this).animate({height:"300px",paddingTop:"80px", backgroundColor:"white", },1000);
+                $(this).text("Out beyond ideas of wrongdoing and rightdoing there is a field. I'll meet you there. When the soul lies down in that grass the world is too full to talk about. ~RUMI");
+
+
+
+
+            });
+
+                
+            });
+
+
+
+
+    </script>
+</body>
+</html>
